@@ -270,111 +270,209 @@
   <!-- ═══════════════════════════════════
        3. PORTFOLIO / PROJECTS
   ═══════════════════════════════════ -->
-  <section class="portfolio-section section" id="portfolio">
+<section class="portfolio-section section" id="portfolio">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">03 — Portfolio</span>
         <h2 class="section-title">Proyek<br><em>Pilihan</em></h2>
         <p class="section-sub">Beberapa pengalaman terbaik yang pernah saya lalui.</p>
       </div>
+    </div>
 
-      <!-- Filter Tabs -->
-      <div class="portfolio-filter reveal">
-        <button class="filter-btn filter-btn--active" data-filter="all">Semua</button>
-        <button class="filter-btn" data-filter="uiux">Student Intern PT Nindya Karya (Persero) - PT. SAC Nusantara, KSO di Proyek Pengendalian Banjir Sistem Tenggang Sringin Tahap I Paket II</button>
-        <button class="filter-btn" data-filter="web"> Assistant Quantity Surveyor di Proyek Peningkatan dan Rehabilitasi Jaringan Utama Kewenangan Daerah di BBWS Pemali Juana (INPRES TAHAP III)</button>
+    <!-- ── FEATURED SHOWCASE — Full-width sliding cards ── -->
+    <div class="showcase-wrap">
+
+      <!-- PROJECT 1 — Featured Hero Card -->
+      <div class="showcase-card" id="proj1">
+        <!-- SLIDESHOW PROYEK 1
+             Tambah/hapus <img> sesuai foto proyekmu.
+             Letakkan semua file foto di folder yang sama dengan index.html -->
+        <div class="showcase-card__bg">
+          <div class="slideshow" data-interval="4000">
+            <div class="slideshow__track">
+              <div class="slideshow__slide active">
+                <img src="Salinan dari Presentasi Magang Tengsri ITS.jpg"
+                     alt="Foto Proyek 1 - Slide 1"
+                     onerror="this.parentElement.classList.add('no-img')" />
+                <div class="slide-fallback"><span>🏗️</span><small>foto-proyek1-1.jpg</small></div>
+              </div>
+              <div class="slideshow__slide">
+                <!-- Ganti src dengan foto proyek 1 berikutnya -->
+                <img src="foto-proyek1-2.jpg"
+                     alt="Foto Proyek 1 - Slide 2"
+                     onerror="this.parentElement.classList.add('no-img')" />
+                <div class="slide-fallback"><span>🏗️</span><small>foto-proyek1-2.jpg</small></div>
+              </div>
+              <div class="slideshow__slide">
+                <!-- Ganti src dengan foto proyek 1 berikutnya -->
+                <img src="foto-proyek1-3.jpg"
+                     alt="Foto Proyek 1 - Slide 3"
+                     onerror="this.parentElement.classList.add('no-img')" />
+                <div class="slide-fallback"><span>🏗️</span><small>foto-proyek1-3.jpg</small></div>
+              </div>
+            </div>
+            <!-- Kontrol slideshow -->
+            <button class="slideshow__btn slideshow__btn--prev" aria-label="Foto sebelumnya">&#8592;</button>
+            <button class="slideshow__btn slideshow__btn--next" aria-label="Foto berikutnya">&#8594;</button>
+            <div class="slideshow__dots"></div>
+            <!-- Counter -->
+            <div class="slideshow__counter">
+              <span class="slideshow__current">1</span> / <span class="slideshow__total">3</span>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-card__overlay"></div>
+
+        <!-- Number -->
+        <div class="showcase-card__number">01</div>
+
+        <!-- Content -->
+        <div class="showcase-card__content">
+          <div class="showcase-card__left">
+            <span class="showcase-card__badge">Student Intern</span>
+            <h3 class="showcase-card__title">
+              Proyek Pengendalian Banjir<br>
+              Sistem Tenggang‑Sringin<br>
+              Tahap I Paket II
+            </h3>
+            <div class="showcase-card__meta-row">
+              <span class="showcase-meta-pill">📅 Juli – Desember 2025</span>
+              <span class="showcase-meta-pill">📍 Semarang</span>
+              <span class="showcase-meta-pill">🏢 PT Nindya Karya – PT SAC Nusantara KSO</span>
+            </div>
+          </div>
+
+          <div class="showcase-card__right">
+            <!-- Detail accordion -->
+            <div class="showcase-detail">
+              <div class="showcase-detail__item">
+                <h5>🎯 Tujuan</h5>
+                <p>Mereduksi banjir di pesisir Kota Semarang melalui pembangunan infrastruktur pengendalian banjir terpadu.</p>
+              </div>
+              <div class="showcase-detail__item">
+                <h5>🔬 Metode</h5>
+                <p>Pembangunan Rumah Pompa Gebangsari (3 unit × 2 m³/s) dan penggantian pompa Rumah Pompa Sringin (5 unit × 2 m³/s).</p>
+              </div>
+              <div class="showcase-detail__item">
+                <h5>✅ Hasil</h5>
+                <p>Diharapkan melindungi 71.883 jiwa di Gayamsari dan 127.026 jiwa di Genuk dari ancaman banjir tahunan.</p>
+              </div>
+            </div>
+
+            <div class="showcase-card__tags">
+              <span>Inspektor Lapangan</span>
+              <span>Quality Control</span>
+              <span>Quantity Surveyor</span>
+            </div>
+
+            <div class="showcase-card__actions">
+              <a href="Selendion.png" target="_blank" class="showcase-btn">
+                Lihat Sertifikat
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Projects Grid -->
-      <div class="portfolio-grid">
-
-        <!-- PROJECT 1 -->
-        <article class="project-card reveal" data-category="uiux">
-          <div class="project-card__visual">
-            <!-- Ganti src dengan screenshot/mockup proyek kamu -->
-            <img src="Salinan dari Presentasi Magang Tengsri ITS.jpg" alt="Magang Tengsri" onerror="this.parentElement.classList.add('no-img')" />
-            <div class="project-card__visual-placeholder">
-              <span>👷</span>
-              <small>Taruh gambar di assets/project-1.jpg</small>
-            </div>
-            <div class="project-card__overlay">
-              <div class="project-card__overlay-links">
-                <!-- Ganti # dengan link demo/github kamu -->
-                <a href="Selendion.png" target="_blank" class="overlay-btn overlay-btn--ghost">Sertifikat Magang↗</a>
+      <!-- PROJECT 2 — Featured Hero Card -->
+      <div class="showcase-card" id="proj2">
+        <!-- SLIDESHOW PROYEK 2
+             Tambah/hapus <img> sesuai foto proyekmu -->
+        <div class="showcase-card__bg">
+          <div class="slideshow" data-interval="4000">
+            <div class="slideshow__track">
+              <div class="slideshow__slide active">
+                <img src="BeautyPlus-Collage-2026-04-13T09_15_35.png"
+                     alt="Foto Proyek 2 - Slide 1"
+                     onerror="this.parentElement.classList.add('no-img')" />
+                <div class="slide-fallback"><span>💧</span><small>foto-proyek2-1.jpg</small></div>
+              </div>
+              <div class="slideshow__slide">
+                <!-- Ganti src dengan foto proyek 2 berikutnya -->
+                <img src="foto-proyek2-2.jpg"
+                     alt="Foto Proyek 2 - Slide 2"
+                     onerror="this.parentElement.classList.add('no-img')" />
+                <div class="slide-fallback"><span>💧</span><small>foto-proyek2-2.jpg</small></div>
+              </div>
+              <div class="slideshow__slide">
+                <!-- Ganti src dengan foto proyek 2 berikutnya -->
+                <img src="foto-proyek2-3.jpg"
+                     alt="Foto Proyek 2 - Slide 3"
+                     onerror="this.parentElement.classList.add('no-img')" />
+                <div class="slide-fallback"><span>💧</span><small>foto-proyek2-3.jpg</small></div>
               </div>
             </div>
-            <div class="project-card__badge">Student Intern</div>
-          </div>
-          <div class="project-card__body">
-            <h3 class="project-card__title">Proyek Pengendalian Banjir Sistem Tenggang-Sringin Tahap I Paket II.</h3>
-            <div class="project-card__meta">
-              <span>📅 Juli-Desember 2025</span>
-              <span>🛠 Inspektor Lapangan, Quality Control, Quantity Surveyor</span>
+            <button class="slideshow__btn slideshow__btn--prev" aria-label="Foto sebelumnya">&#8592;</button>
+            <button class="slideshow__btn slideshow__btn--next" aria-label="Foto berikutnya">&#8594;</button>
+            <div class="slideshow__dots"></div>
+            <div class="slideshow__counter">
+              <span class="slideshow__current">1</span> / <span class="slideshow__total">3</span>
             </div>
-            <div class="project-card__detail">
-              <div class="detail-block">
+          </div>
+        </div>
+        <div class="showcase-card__overlay"></div>
+
+        <div class="showcase-card__number">02</div>
+
+        <div class="showcase-card__content">
+          <div class="showcase-card__left">
+            <span class="showcase-card__badge">Assistant Quantity Surveyor</span>
+            <h3 class="showcase-card__title">
+              Proyek Peningkatan &<br>
+              Rehabilitasi Jaringan Irigasi<br>
+              BBWS Pemali Juana
+            </h3>
+            <div class="showcase-card__meta-row">
+              <span class="showcase-meta-pill">📅 Oktober – Desember 2025</span>
+              <span class="showcase-meta-pill">📍 Jawa Tengah</span>
+              <span class="showcase-meta-pill">🏢 INPRES Tahap III</span>
+            </div>
+          </div>
+
+          <div class="showcase-card__right">
+            <div class="showcase-detail">
+              <div class="showcase-detail__item">
                 <h5>🎯 Tujuan</h5>
-                <p>Proyek Pengendalian Banjir Sistem Tengang-Sringin Tahap I Paket II bertujuan untuk mereduksi banjir di pesisir Kota Semarang </p>
+                <p>Meningkatkan ketahanan pangan di 5 Kabupaten Jawa Tengah melalui pembangunan dan rehabilitasi infrastruktur irigasi.</p>
               </div>
-              <div class="detail-block">
+              <div class="showcase-detail__item">
                 <h5>🔬 Metode</h5>
-                <p>Pembangunan Rumah Pompa Gebangsari dengan debit pompa 2m3/s sebanyak 3 buah dan juga penggantian pompa di Rumah Pompa Sringin sebesar 2m3/s dengan 5 buah pompa</p>
+                <p>Normalisasi saluran irigasi dan rehabilitasi pasangan batu di Kab. Jepara, Demak, Pati, Semarang, dan Batang.</p>
               </div>
-              <div class="detail-block">
+              <div class="showcase-detail__item">
                 <h5>✅ Hasil</h5>
-                <p>Setelah adanya penerapan Rumah Pompa Gebangsari dan Sringin harapannya bisa mereduksi banjir dan menyelamatkan 71.883 jiwa di Kecamatan Gayamsari dan 127.026 jiwa di Kecamatan Genuk.</p>
+                <p>Terdistribusinya air irigasi secara optimal untuk mendukung sektor pertanian di 5 kabupaten wilayah kerja.</p>
               </div>
             </div>
-            <div class="project-card__tags">
-              <span>Inspektor Lapangan</span><span>Quality Control</span><span>Quantity Surveyor</span>
+
+            <div class="showcase-card__tags">
+              <span>Opname Proyek</span>
+              <span>Perhitungan Volume Progress</span>
+              <span>MS. Excel</span>
+            </div>
+
+            <div class="showcase-card__actions">
+              <a href="MAGANG ITS_04.pdf" target="_blank" class="showcase-btn">
+                Surat Keterangan Kerja
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
             </div>
           </div>
-        </article>
+        </div>
+      </div>
 
-        <!-- PROJECT 2 -->
-        <article class="project-card reveal" data-category="web">
-          <div class="project-card__visual">
-            <img src="BeautyPlus-Collage-2026-04-13T09_15_35.png" alt="Foto Oplah" onerror="this.parentElement.classList.add('no-img')" />
-            <div class="project-card__visual-placeholder">
-              <span>👷</span>
-              <small>Taruh gambar di assets/project-2.jpg</small>
-            </div>
-            <div class="project-card__overlay">
-              <div class="project-card__overlay-links">
-                <a href="MAGANG ITS_04.pdf" target="_blank" class="overlay-btn">Surat Keterangan Kerja ↗</a>
-              </div>
-            </div>
-            <div class="project-card__badge">Assistant Quantity Surveyor</div>
-          </div>
-          <div class="project-card__body">
-            <h3 class="project-card__title">Proyek Peningkatan dan Rehabilitasi Jaringan Utama Kewenangan Daerah di BBWS Pemali Juana (INPRES TAHAP III).</h3>
-            <div class="project-card__meta">
-              <span>📅 Oktober-Desember 2025</span>
-              <span>🛠 Opname Proyek, Perhitungan Volume Progress, MS.Excel</span>
-            </div>
-            <div class="project-card__detail">
-              <div class="detail-block">
-                <h5>🎯 Tujuan</h5>
-                <p>Meningkatkan ketahanan pangan di 5 Kabupaten Jawa Tengah (Kab. Jepara, Kab. Demak, Kab. Pati, Kab Semarang, Kab. Batang) dengan membangun Infrastruktur irigasi.</p>
-              </div>
-              <div class="detail-block">
-                <h5>🔬 Metode</h5>
-                <p>Pembangunan infrastuktur irigasi meliputi normalisasi saluran irigasi dan pembangunan/rehabilitasi pasangan batu saluran irigasi</p>
-              </div>
-              <div class="detail-block">
-                <h5>✅ Hasil</h5>
-                <p>Dengan adanya proyek ini diharapkan mampu untuk meningkatkan ketahanan pangan melalui terdistribusinya air dari saluran irigasi</p>
-              </div>
-            </div>
-            <div class="project-card__tags">
-              <span>Opname Proyek</span><span>Perhitungan Volume Progress</span><span>MS. Excel</span>
-            </div>
-          </div>
-        </article>
+    </div><!-- end .showcase-wrap -->
 
-
-      </div><!-- end .portfolio-grid -->
+    <!-- Dot navigation -->
+    <div class="showcase-nav container">
+      <button class="showcase-dot showcase-dot--active" data-target="proj1" aria-label="Proyek 1"></button>
+      <button class="showcase-dot" data-target="proj2" aria-label="Proyek 2"></button>
+      <div class="showcase-nav__line">
+        <div class="showcase-nav__progress" id="showcaseProgress"></div>
+      </div>
     </div>
+
   </section>
 
   <!-- ═══════════════════════════════════
